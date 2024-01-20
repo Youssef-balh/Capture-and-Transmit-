@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".test_new">
+
+
+    <EditText
+        android:id="@+id/editTextIpAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter IP Address"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPort"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextPort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Enter Port"
+        app:layout_constraintTop_toBottomOf="@+id/editTextIpAddress"
+        app:layout_constraintBottom_toTopOf="@+id/editTextRequestTopic"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextRequestTopic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Request Topic"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPort"
+        app:layout_constraintBottom_toTopOf="@+id/editTextResponseTopic"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextResponseTopic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Response Topic"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRequestTopic"
+        app:layout_constraintBottom_toTopOf="@+id/messageTextView"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        app:layout_constraintTop_toBottomOf="@+id/subscriptionStatusTextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/editTextResponseTopic"
+        app:layout_constraintBottom_toTopOf="@+id/connectionStatusTextView"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/connectionStatusTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@+id/messageTextView"
+        app:layout_constraintBottom_toTopOf="@+id/subscriptionStatusTextView"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/subscriptionStatusTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@+id/connectionStatusTextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <TextureView
+        android:id="@+id/textureView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="420px"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
