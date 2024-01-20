@@ -1,9 +1,7 @@
 # Capture-and-Transmit Via MQTT
 
-
 ## Overview
 
-MQTT (Message Queuing Telemetry Transport) is a protocol designed for communication between devices. 
 This is an Android application developed in Java, functioning as an MQTT client for capturing and sending photos in response to requests. My app seamlessly integrates with any MQTT client capable of sending requests.
 
 *Note: During my search, I couldn't find an existing app on the App Store or Google Play that provides similar functionality, so I decided to create this application.*
@@ -24,6 +22,14 @@ This is an Android application developed in Java, functioning as an MQTT client 
 
 - **Definition:** A string that categorizes and filters messages.
 - **How it Works:** The MQTT topics serve as channels for communication. The Android device can publish photos to a topic or subscribe to receive responses from a specific topic.
+
+## Technologies Used
+
+- **MQTT:** The application leverages the MQTT (Message Queuing Telemetry Transport) protocol for efficient and reliable communication between devices.
+
+- **Java:** The app is developed using Java programming language, ensuring compatibility and flexibility.
+
+- **Android Studio:** The development environment used for creating the Android application, providing tools and resources for Android app development.
 
 ## Subscription and Publishing in My APP
 
